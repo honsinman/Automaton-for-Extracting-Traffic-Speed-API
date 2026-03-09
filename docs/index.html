@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Central Traffic Worst-Speed Monitor</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #111; }
+    h1 { margin: 0 0 8px; }
+    .muted { color: #555; margin-bottom: 16px; }
+    .cards { display: grid; grid-template-columns: repeat(4, minmax(180px, 1fr)); gap: 12px; margin: 16px 0; }
+    .card { border: 1px solid #ccc; border-radius: 10px; padding: 14px; background: #fafafa; }
+    .card .label { font-size: 12px; color: #666; }
+    .card .value { font-size: 30px; font-weight: 700; margin-top: 4px; }
+    .toolbar { display:flex; gap:10px; align-items:center; flex-wrap: wrap; margin-bottom: 12px; }
+    input { padding: 6px 8px; width: 90px; }
+    button { padding: 8px 12px; cursor: pointer; }
+    table { width:100%; border-collapse: collapse; }
+    th, td { border:1px solid #ddd; padding: 8px; text-align:left; font-size:14px; }
+    th { background:#f0f0f0; position: sticky; top: 0; }
+    tbody tr:nth-child(even) { background:#fafafa; }
+    .ok { color:#0a7a2a; }
+    .bad { color:#b00020; }
+    @media (max-width: 900px) { .cards { grid-template-columns: repeat(2, minmax(180px, 1fr)); } }
+  </style>
+</head>
+<body>
+  <h1>Central Traffic Worst-Speed Monitor</h1>
+  <div class="muted">Uses your shapefile names. There are 23 lines and 46 route-directions total. Data is updated by GitHub Actions every 5 minutes. Worst congestion = lowest saved speed.</div>
+  <div class="toolbar">
+    <button id="refreshBtn">Refresh now</button>
+    <button id="csvBtn">Export CSV</button>
+    <span id="status">Loading…</span>
+  </div>
+  <div class="cards">
+    <div class="card"><div class="label">Lines</div><div class="value" id="lines">-</div></div>
+    <div class="card"><div class="label">Route directions</div><div class="value" id="directions">-</div></div>
+    <div class="card"><div class="label">Saved worst records</div><div class="value" id="saved">-</div></div>
+    <div class="card"><div class="label">Lowest saved speed</div><div class="value" id="lowest">-</div></div>
+  </div>
+  <div class="muted">Last update: <strong id="updatedAt">-</strong></div>
+  <table id="tbl">
+    <thead>
+      <tr>
+        <th>English Name</th>
+        <th>Chinese Name</th>
+        <th>Direction</th>
+        <th>Speed</th>
+        <th>Distance</th>
+        <th>ETA</th>
+        <th>Extract Time</th>
+        <th>Lane</th>
+        <th>Capacity</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Last API Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+<script>
+async function loadJson(path) {
+  const r = await fetch(path + '?t=' + Date.now());
+  if (!r.ok) throw new Error(path + ' ' + r.status);
+  return await r.json();
+}
+function fmtCoord(p) {
+  if (!p) return '';
+  return `${p.lat.toFixed(6)}, ${p.long.toFixed(6)}`;
+}
+function speedValue(v) {
+  const n = Number(v);
+  return Number.isFinite(n) ? n : null;
+}
+function toCsv(rows) {
+  const headers = ["English Name","Chinese Name","Direction","Speed","Distance","ETA","Extract Time","Lane","Capacity","Start","End","Last API Status"];
+  const data = rows.map(r => [
+    r.english_name || "",
+    r.chinese_name || "",
+    r.direction || "",
+    r.speed ?? "",
+    r.distance || "",
+    r.eta || "",
+    r.extract_time || "",
+    r.lane ?? "",
+    r.capacity ?? "",
+    fmtCoord(r.start),
+    fmtCoord(r.end),
+    r.last_api_status || ""
+  ]);
+  const esc = s => `"${String(s).replaceAll('"','""')}"`;
+  return [headers, ...data].map(row => row.map(esc).join(",")).join("\n");
+}
+let latestRows = [];
+async function refresh() {
+  const status = document.getElementById('status');
+  status.textContent = 'Loading…';
+  try {
+    const [routes, latest] = await Promise.all([
+      loadJson('./data/routes.json'),
+      loadJson('./data/latest.json')
+    ]);
+    const rows = (latest.records || []).slice().sort((a,b) => {
+      const av = speedValue(a.speed); const bv = speedValue(b.speed);
+      if (av === null && bv === null) return 0;
+      if (av === null) return 1;
+      if (bv === null) return -1;
+      return av - bv;
+    });
+    latestRows = rows;
+    document.getElementById('lines').textContent = String(routes.length / 2);
+    document.getElementById('directions').textContent = String(routes.length);
+    document.getElementById('saved').textContent = String(rows.length);
+    document.getElementById('lowest').textContent = rows.length && speedValue(rows[0].speed) !== null ? String(rows[0].speed) : '-';
+    document.getElementById('updatedAt').textContent = latest.updated_at || '-';
+    const tbody = document.querySelector('#tbl tbody');
+    tbody.innerHTML = '';
+    for (const r of rows) {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${r.english_name || ''}</td>
+        <td>${r.chinese_name || ''}</td>
+        <td>${r.direction || ''}</td>
+        <td>${r.speed ?? ''}</td>
+        <td>${r.distance || ''}</td>
+        <td>${r.eta || ''}</td>
+        <td>${r.extract_time || ''}</td>
+        <td>${r.lane ?? ''}</td>
+        <td>${r.capacity ?? ''}</td>
+        <td>${fmtCoord(r.start)}</td>
+        <td>${fmtCoord(r.end)}</td>
+        <td>${r.last_api_status || ''}</td>
+      `;
+      tbody.appendChild(tr);
+    }
+    status.innerHTML = '<span class="ok">Loaded.</span>';
+  } catch (e) {
+    status.innerHTML = '<span class="bad">Failed: ' + e.message + '</span>';
+  }
+}
+document.getElementById('refreshBtn').addEventListener('click', refresh);
+document.getElementById('csvBtn').addEventListener('click', () => {
+  const blob = new Blob([toCsv(latestRows)], {type: 'text/csv;charset=utf-8;'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'central_traffic_worst_speed.csv';
+  a.click();
+});
+refresh();
+setInterval(refresh, 60000);
+</script>
+</body>
+</html>
