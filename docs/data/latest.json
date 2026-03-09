@@ -1,4 +1,925 @@
 {
-  "updated_at": null,
-  "records": []
+  "updated_at": "2026-03-09T15:27:22.148518+00:00",
+  "records": [
+    {
+      "route_id": "line_2",
+      "line_index": 2,
+      "english_name": "CHATER ROAD",
+      "chinese_name": "遮打道",
+      "display_name": "CHATER ROAD / 遮打道",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "end": {
+        "lat": 22.280889001167782,
+        "long": 114.16195958267822
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_2",
+      "line_index": 2,
+      "english_name": "CHATER ROAD",
+      "chinese_name": "遮打道",
+      "display_name": "CHATER ROAD / 遮打道",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.280889001167782,
+        "long": 114.16195958267822
+      },
+      "end": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_14",
+      "line_index": 14,
+      "english_name": "COCHRANE STREET",
+      "chinese_name": "閣麟街",
+      "display_name": "COCHRANE STREET / 閣麟街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 1.0,
+      "capacity": 700.0,
+      "start": {
+        "lat": 22.2836634605178,
+        "long": 114.1549381318354
+      },
+      "end": {
+        "lat": 22.283564804192007,
+        "long": 114.15491607562828
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_14",
+      "line_index": 14,
+      "english_name": "COCHRANE STREET",
+      "chinese_name": "閣麟街",
+      "display_name": "COCHRANE STREET / 閣麟街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 1.0,
+      "capacity": 700.0,
+      "start": {
+        "lat": 22.283564804192007,
+        "long": 114.15491607562828
+      },
+      "end": {
+        "lat": 22.2836634605178,
+        "long": 114.1549381318354
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_22",
+      "line_index": 22,
+      "english_name": "D'AGUILAR STREET",
+      "chinese_name": "德己立街",
+      "display_name": "D'AGUILAR STREET / 德己立街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 1.0,
+      "capacity": 700.0,
+      "start": {
+        "lat": 22.281842074901327,
+        "long": 114.15649665399296
+      },
+      "end": {
+        "lat": 22.281766123108046,
+        "long": 114.15643478076835
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_22",
+      "line_index": 22,
+      "english_name": "D'AGUILAR STREET",
+      "chinese_name": "德己立街",
+      "display_name": "D'AGUILAR STREET / 德己立街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 1.0,
+      "capacity": 700.0,
+      "start": {
+        "lat": 22.281766123108046,
+        "long": 114.15643478076835
+      },
+      "end": {
+        "lat": 22.281842074901327,
+        "long": 114.15649665399296
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_1",
+      "line_index": 1,
+      "english_name": "DES VOEUX ROAD CENTRAL",
+      "chinese_name": "德輔道中",
+      "display_name": "DES VOEUX ROAD CENTRAL / 德輔道中",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.284549276081385,
+        "long": 114.15571442241648
+      },
+      "end": {
+        "lat": 22.28626189305397,
+        "long": 114.15325489880307
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_8",
+      "line_index": 8,
+      "english_name": "DES VOEUX ROAD CENTRAL",
+      "chinese_name": "德輔道中",
+      "display_name": "DES VOEUX ROAD CENTRAL / 德輔道中",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.284549276081385,
+        "long": 114.15571442241648
+      },
+      "end": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_12",
+      "line_index": 12,
+      "english_name": "DES VOEUX ROAD CENTRAL",
+      "chinese_name": "德輔道中",
+      "display_name": "DES VOEUX ROAD CENTRAL / 德輔道中",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 1.0,
+      "capacity": 700.0,
+      "start": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "end": {
+        "lat": 22.279979786687022,
+        "long": 114.16069232233959
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_1",
+      "line_index": 1,
+      "english_name": "DES VOEUX ROAD CENTRAL",
+      "chinese_name": "德輔道中",
+      "display_name": "DES VOEUX ROAD CENTRAL / 德輔道中",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.28626189305397,
+        "long": 114.15325489880307
+      },
+      "end": {
+        "lat": 22.284549276081385,
+        "long": 114.15571442241648
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_8",
+      "line_index": 8,
+      "english_name": "DES VOEUX ROAD CENTRAL",
+      "chinese_name": "德輔道中",
+      "display_name": "DES VOEUX ROAD CENTRAL / 德輔道中",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "end": {
+        "lat": 22.284549276081385,
+        "long": 114.15571442241648
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_12",
+      "line_index": 12,
+      "english_name": "DES VOEUX ROAD CENTRAL",
+      "chinese_name": "德輔道中",
+      "display_name": "DES VOEUX ROAD CENTRAL / 德輔道中",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 1.0,
+      "capacity": 700.0,
+      "start": {
+        "lat": 22.279979786687022,
+        "long": 114.16069232233959
+      },
+      "end": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_21",
+      "line_index": 21,
+      "english_name": "EDINBURGH PLACE",
+      "chinese_name": "愛丁堡廣場",
+      "display_name": "EDINBURGH PLACE / 愛丁堡廣場",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.282251974200502,
+        "long": 114.15973793480728
+      },
+      "end": {
+        "lat": 22.282012651663415,
+        "long": 114.16049380235158
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_21",
+      "line_index": 21,
+      "english_name": "EDINBURGH PLACE",
+      "chinese_name": "愛丁堡廣場",
+      "display_name": "EDINBURGH PLACE / 愛丁堡廣場",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.282012651663415,
+        "long": 114.16049380235158
+      },
+      "end": {
+        "lat": 22.282251974200502,
+        "long": 114.15973793480728
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_20",
+      "line_index": 20,
+      "english_name": "ICE HOUSE STREET",
+      "chinese_name": "雪廠街",
+      "display_name": "ICE HOUSE STREET / 雪廠街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.280162342598434,
+        "long": 114.15787361741604
+      },
+      "end": {
+        "lat": 22.28232198130055,
+        "long": 114.15916241721118
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_20",
+      "line_index": 20,
+      "english_name": "ICE HOUSE STREET",
+      "chinese_name": "雪廠街",
+      "display_name": "ICE HOUSE STREET / 雪廠街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.28232198130055,
+        "long": 114.15916241721118
+      },
+      "end": {
+        "lat": 22.280162342598434,
+        "long": 114.15787361741604
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_16",
+      "line_index": 16,
+      "english_name": "JUBILEE STREET",
+      "chinese_name": "租庇利街",
+      "display_name": "JUBILEE STREET / 租庇利街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.284549276081385,
+        "long": 114.15571442241648
+      },
+      "end": {
+        "lat": 22.283829630696204,
+        "long": 114.15472632489607
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_18",
+      "line_index": 18,
+      "english_name": "JUBILEE STREET",
+      "chinese_name": "租庇利街",
+      "display_name": "JUBILEE STREET / 租庇利街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.28498366004681,
+        "long": 114.15631085341565
+      },
+      "end": {
+        "lat": 22.284549276081385,
+        "long": 114.15571442241648
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_16",
+      "line_index": 16,
+      "english_name": "JUBILEE STREET",
+      "chinese_name": "租庇利街",
+      "display_name": "JUBILEE STREET / 租庇利街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.283829630696204,
+        "long": 114.15472632489607
+      },
+      "end": {
+        "lat": 22.284549276081385,
+        "long": 114.15571442241648
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_18",
+      "line_index": 18,
+      "english_name": "JUBILEE STREET",
+      "chinese_name": "租庇利街",
+      "display_name": "JUBILEE STREET / 租庇利街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.284549276081385,
+        "long": 114.15571442241648
+      },
+      "end": {
+        "lat": 22.28498366004681,
+        "long": 114.15631085341565
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_13",
+      "line_index": 13,
+      "english_name": "MAN YIU STREET",
+      "chinese_name": "民耀街",
+      "display_name": "MAN YIU STREET / 民耀街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 4.0,
+      "capacity": 2800.0,
+      "start": {
+        "lat": 22.28284995981855,
+        "long": 114.1584044110149
+      },
+      "end": {
+        "lat": 22.28413800175328,
+        "long": 114.15927576892108
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_13",
+      "line_index": 13,
+      "english_name": "MAN YIU STREET",
+      "chinese_name": "民耀街",
+      "display_name": "MAN YIU STREET / 民耀街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 4.0,
+      "capacity": 2800.0,
+      "start": {
+        "lat": 22.28413800175328,
+        "long": 114.15927576892108
+      },
+      "end": {
+        "lat": 22.28284995981855,
+        "long": 114.1584044110149
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_4",
+      "line_index": 4,
+      "english_name": "PEDDER STREET",
+      "chinese_name": "畢打街",
+      "display_name": "PEDDER STREET / 畢打街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "end": {
+        "lat": 22.281335124767534,
+        "long": 114.15690432283434
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_10",
+      "line_index": 10,
+      "english_name": "PEDDER STREET",
+      "chinese_name": "畢打街",
+      "display_name": "PEDDER STREET / 畢打街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 4.0,
+      "capacity": 1900.0,
+      "start": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "end": {
+        "lat": 22.28281833094067,
+        "long": 114.15838069897725
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_4",
+      "line_index": 4,
+      "english_name": "PEDDER STREET",
+      "chinese_name": "畢打街",
+      "display_name": "PEDDER STREET / 畢打街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.281335124767534,
+        "long": 114.15690432283434
+      },
+      "end": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_10",
+      "line_index": 10,
+      "english_name": "PEDDER STREET",
+      "chinese_name": "畢打街",
+      "display_name": "PEDDER STREET / 畢打街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 4.0,
+      "capacity": 1900.0,
+      "start": {
+        "lat": 22.28281833094067,
+        "long": 114.15838069897725
+      },
+      "end": {
+        "lat": 22.28203949893608,
+        "long": 114.15776110883819
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_15",
+      "line_index": 15,
+      "english_name": "QUEEN VICTORIA STREET",
+      "chinese_name": "域多利皇后街",
+      "display_name": "QUEEN VICTORIA STREET / 域多利皇后街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.284156917418795,
+        "long": 114.15603439131412
+      },
+      "end": {
+        "lat": 22.283519551402623,
+        "long": 114.1551291208568
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_17",
+      "line_index": 17,
+      "english_name": "QUEEN VICTORIA STREET",
+      "chinese_name": "域多利皇后街",
+      "display_name": "QUEEN VICTORIA STREET / 域多利皇后街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.284629839674498,
+        "long": 114.15670610607614
+      },
+      "end": {
+        "lat": 22.284156917418795,
+        "long": 114.15603439131412
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_15",
+      "line_index": 15,
+      "english_name": "QUEEN VICTORIA STREET",
+      "chinese_name": "域多利皇后街",
+      "display_name": "QUEEN VICTORIA STREET / 域多利皇后街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.283519551402623,
+        "long": 114.1551291208568
+      },
+      "end": {
+        "lat": 22.284156917418795,
+        "long": 114.15603439131412
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_17",
+      "line_index": 17,
+      "english_name": "QUEEN VICTORIA STREET",
+      "chinese_name": "域多利皇后街",
+      "display_name": "QUEEN VICTORIA STREET / 域多利皇后街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.284156917418795,
+        "long": 114.15603439131412
+      },
+      "end": {
+        "lat": 22.284629839674498,
+        "long": 114.15670610607614
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_3",
+      "line_index": 3,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.281842074901327,
+        "long": 114.15649665399296
+      },
+      "end": {
+        "lat": 22.281335124767534,
+        "long": 114.15690432283434
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_5",
+      "line_index": 5,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.281335124767534,
+        "long": 114.15690432283434
+      },
+      "end": {
+        "lat": 22.280252425103402,
+        "long": 114.157913109206
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_6",
+      "line_index": 6,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.283519551402623,
+        "long": 114.1551291208568
+      },
+      "end": {
+        "lat": 22.281842074901327,
+        "long": 114.15649665399296
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_9",
+      "line_index": 9,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 4.0,
+      "capacity": 2800.0,
+      "start": {
+        "lat": 22.280252425103402,
+        "long": 114.157913109206
+      },
+      "end": {
+        "lat": 22.279979786687022,
+        "long": 114.16069232233959
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_11",
+      "line_index": 11,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.28507634304583,
+        "long": 114.15305869676422
+      },
+      "end": {
+        "lat": 22.283519551402623,
+        "long": 114.1551291208568
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_3",
+      "line_index": 3,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.281335124767534,
+        "long": 114.15690432283434
+      },
+      "end": {
+        "lat": 22.281842074901327,
+        "long": 114.15649665399296
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_5",
+      "line_index": 5,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.280252425103402,
+        "long": 114.157913109206
+      },
+      "end": {
+        "lat": 22.281335124767534,
+        "long": 114.15690432283434
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_6",
+      "line_index": 6,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.281842074901327,
+        "long": 114.15649665399296
+      },
+      "end": {
+        "lat": 22.283519551402623,
+        "long": 114.1551291208568
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_9",
+      "line_index": 9,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 4.0,
+      "capacity": 2800.0,
+      "start": {
+        "lat": 22.279979786687022,
+        "long": 114.16069232233959
+      },
+      "end": {
+        "lat": 22.280252425103402,
+        "long": 114.157913109206
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_11",
+      "line_index": 11,
+      "english_name": "QUEEN'S ROAD CENTRAL",
+      "chinese_name": "皇后大道中",
+      "display_name": "QUEEN'S ROAD CENTRAL / 皇后大道中",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 3.0,
+      "capacity": 2100.0,
+      "start": {
+        "lat": 22.283519551402623,
+        "long": 114.1551291208568
+      },
+      "end": {
+        "lat": 22.28507634304583,
+        "long": 114.15305869676422
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_7",
+      "line_index": 7,
+      "english_name": "QUEENSWAY",
+      "chinese_name": "金鐘道",
+      "display_name": "QUEENSWAY / 金鐘道",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 5.0,
+      "capacity": 3500.0,
+      "start": {
+        "lat": 22.279979786687022,
+        "long": 114.16069232233959
+      },
+      "end": {
+        "lat": 22.27988605735255,
+        "long": 114.1611497331201
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_7",
+      "line_index": 7,
+      "english_name": "QUEENSWAY",
+      "chinese_name": "金鐘道",
+      "display_name": "QUEENSWAY / 金鐘道",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 5.0,
+      "capacity": 3500.0,
+      "start": {
+        "lat": 22.27988605735255,
+        "long": 114.1611497331201
+      },
+      "end": {
+        "lat": 22.279979786687022,
+        "long": 114.16069232233959
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_19",
+      "line_index": 19,
+      "english_name": "WING LOK STREET",
+      "chinese_name": "永樂街",
+      "display_name": "WING LOK STREET / 永樂街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 1.0,
+      "capacity": 700.0,
+      "start": {
+        "lat": 22.285809286472773,
+        "long": 114.15403628523083
+      },
+      "end": {
+        "lat": 22.285847148643903,
+        "long": 114.15318626067341
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_19",
+      "line_index": 19,
+      "english_name": "WING LOK STREET",
+      "chinese_name": "永樂街",
+      "display_name": "WING LOK STREET / 永樂街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 1.0,
+      "capacity": 700.0,
+      "start": {
+        "lat": 22.285847148643903,
+        "long": 114.15318626067341
+      },
+      "end": {
+        "lat": 22.285809286472773,
+        "long": 114.15403628523083
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_23",
+      "line_index": 23,
+      "english_name": "WYNDHAM STREET",
+      "chinese_name": "雲咸街",
+      "display_name": "WYNDHAM STREET / 雲咸街",
+      "direction": "A→B",
+      "direction_key": "forward",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.281510068843996,
+        "long": 114.15676404872295
+      },
+      "end": {
+        "lat": 22.281445111155882,
+        "long": 114.15671034996635
+      },
+      "last_api_status": "403"
+    },
+    {
+      "route_id": "line_23",
+      "line_index": 23,
+      "english_name": "WYNDHAM STREET",
+      "chinese_name": "雲咸街",
+      "display_name": "WYNDHAM STREET / 雲咸街",
+      "direction": "B→A",
+      "direction_key": "reverse",
+      "lane": 2.0,
+      "capacity": 1400.0,
+      "start": {
+        "lat": 22.281445111155882,
+        "long": 114.15671034996635
+      },
+      "end": {
+        "lat": 22.281510068843996,
+        "long": 114.15676404872295
+      },
+      "last_api_status": "403"
+    }
+  ]
 }
