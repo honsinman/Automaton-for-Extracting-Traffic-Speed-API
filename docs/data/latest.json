@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-15T09:05:54.841265+00:00",
+  "updated_at": "2026-04-15T11:40:32.732776+00:00",
   "records": [
     {
       "route_id": "line_2",
@@ -179,7 +179,7 @@
         "lat": 22.279979786687022,
         "long": 114.16069232233959
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_1",
@@ -239,7 +239,7 @@
         "lat": 22.28203949893608,
         "long": 114.15776110883819
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_21",
@@ -419,7 +419,7 @@
         "lat": 22.28413800175328,
         "long": 114.15927576892108
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_13",
