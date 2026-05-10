@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-10T16:38:18.133657+00:00",
+  "updated_at": "2026-05-10T17:38:09.089450+00:00",
   "records": [
     {
       "route_id": "line_2",
@@ -79,7 +79,7 @@
         "lat": 22.2836634605178,
         "long": 114.1549381318354
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_22",
@@ -339,7 +339,7 @@
         "lat": 22.283829630696204,
         "long": 114.15472632489607
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_18",
@@ -379,7 +379,7 @@
         "lat": 22.284549276081385,
         "long": 114.15571442241648
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_18",
@@ -539,7 +539,7 @@
         "lat": 22.283519551402623,
         "long": 114.1551291208568
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_17",
@@ -559,7 +559,7 @@
         "lat": 22.284156917418795,
         "long": 114.15603439131412
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_15",
@@ -579,7 +579,7 @@
         "lat": 22.284156917418795,
         "long": 114.15603439131412
       },
-      "last_api_status": "403"
+      "last_api_status": "200"
     },
     {
       "route_id": "line_17",
